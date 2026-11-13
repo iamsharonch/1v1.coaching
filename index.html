@@ -1289,6 +1289,27 @@ html{overflow-x:clip}img,video,svg{max-width:100%}img{height:auto}*{box-sizing:b
   #longterm .longterm-copy > .longterm-intro,
   #longterm .lt-section-heading { text-align: center !important; }
   #longterm .lt-fit .lt-small-note { font-size: 0.82rem !important; line-height: 1.85; }
+
+/* 電腦版：兩顆 CTA 縮小 */
+@media (min-width: 769px) {
+
+  /* 右上角導覽列 CTA */
+  .hero .nav .links > a.btn {
+    width: 180px;
+    min-width: 0;
+    padding: 10px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* 首頁主視覺 CTA */
+  .hero .hero-buttons > a.btn {
+    width: 224px;
+    min-width: 0;
+    padding: 11px 14px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
 }
 </style>
 </head><body>

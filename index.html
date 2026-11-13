@@ -1290,24 +1290,25 @@ html{overflow-x:clip}img,video,svg{max-width:100%}img{height:auto}*{box-sizing:b
   #longterm .lt-section-heading { text-align: center !important; }
   #longterm .lt-fit .lt-small-note { font-size: 0.82rem !important; line-height: 1.85; }
 
-/* 電腦版：兩顆 CTA 縮小 */
-@media (min-width: 769px) {
 
-  /* 右上角導覽列 CTA */
+/* 手機版：縮小首頁兩顆 CTA */
+@media (max-width: 767px) {
+
+  /* 右上角 CTA */
   .hero .nav .links > a.btn {
-    width: 180px;
-    min-width: 0;
-    padding: 10px 12px;
-    font-size: 12px;
+    width: 150px !important;
+    min-width: 0 !important;
+    padding: 9px 10px !important;
+    font-size: 11px !important;
     white-space: nowrap;
   }
 
-  /* 首頁主視覺 CTA */
+  /* 首頁中央 CTA */
   .hero .hero-buttons > a.btn {
-    width: 224px;
-    min-width: 0;
-    padding: 11px 14px;
-    font-size: 12px;
+    width: 180px !important;
+    min-width: 0 !important;
+    padding: 10px 12px !important;
+    font-size: 11px !important;
     white-space: nowrap;
   }
 }

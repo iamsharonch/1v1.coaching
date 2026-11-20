@@ -1347,6 +1347,21 @@ html{overflow-x:clip}img,video,svg{max-width:100%}img{height:auto}*{box-sizing:b
     padding: 14px 10px;
   }
   #services .consultation-cards { margin-top: 24px; gap: 12px; }
+  #services .consultation-cards li {
+    display: grid;
+    grid-template-columns: 36px minmax(0, 1fr);
+    align-items: center;
+    gap: 2px 12px;
+    padding: 14px 16px;
+    text-align: left;
+  }
+  #services .consultation-cards li > span {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+  #services .consultation-cards li > h3 { margin: 0; text-align: left; }
+  #services .consultation-cards li > p { grid-column: 2; text-align: left; }
   #services .consultation-status { margin-top: 20px; }
 }
 </style>
